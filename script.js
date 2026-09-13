@@ -15,7 +15,7 @@ mainNav.querySelectorAll('a').forEach((link) => {
   });
 });
 
-const form = document.getElementById('signup-form');
+const form = document.getElementById('book-form');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -23,15 +23,17 @@ form.addEventListener('submit', (event) => {
   const name = form.name.value.trim();
   const email = form.email.value.trim();
   const phone = form.phone.value.trim();
-  const program = form.program.value;
+  const trainType = form.trainType.value;
+  const bestTime = form.bestTime.value;
   const goals = form.goals.value.trim();
 
-  const subject = `Coaching Sign Up: ${name}`;
+  const subject = `Call Booking Request: ${name}`;
   const body =
     `Name: ${name}\n` +
     `Email: ${email}\n` +
-    `Phone: ${phone || 'N/A'}\n` +
-    `Program: ${program}\n\n` +
+    `Phone: ${phone}\n` +
+    `How They Want To Train: ${trainType}\n` +
+    `Best Time To Call: ${bestTime}\n\n` +
     `Goals:\n${goals}`;
 
   const mailtoUrl = `mailto:Coachmaxstrength@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
