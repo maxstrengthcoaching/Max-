@@ -240,6 +240,48 @@ h2.center { text-align: center; max-width: 680px; margin-left: auto; margin-righ
 }
 .about-copy p { color: var(--muted); font-size: 1.05rem; }
 
+/* ---------- What I Coach ---------- */
+.coach { padding-bottom: 0; }
+.section-sub {
+  color: var(--muted);
+  max-width: 620px;
+  margin: 0 auto 8px;
+}
+.section-sub.center { text-align: center; }
+.coach-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+.coach-tile {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px 24px;
+}
+.coach-num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--emerald-deep);
+  margin-bottom: 12px;
+}
+.coach-tile h3 { font-size: 1.1rem; margin-bottom: 10px; }
+.coach-tile p { font-size: 0.92rem; margin: 0; }
+
+.photo-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 80px;
+}
+.photo-strip img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: top center;
+}
+
 /* ---------- Train With Me ---------- */
 .train { background: var(--panel); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .train-grid {
@@ -376,8 +418,15 @@ h2.center { text-align: center; max-width: 680px; margin-left: auto; margin-righ
 @media (max-width: 900px) {
   .about-grid,
   .book-inner { grid-template-columns: 1fr; }
-  .train-grid { grid-template-columns: 1fr; }
+  .train-grid,
+  .coach-grid { grid-template-columns: repeat(2, 1fr); }
   .hero { min-height: 82vh; }
+}
+
+@media (max-width: 640px) {
+  .coach-grid { grid-template-columns: 1fr; }
+  .photo-strip { grid-template-columns: 1fr; margin-top: 48px; }
+  .photo-strip img { height: 320px; }
 }
 
 @media (max-width: 720px) {
