@@ -262,10 +262,10 @@ h2.center { text-align: center; max-width: 680px; margin-left: auto; margin-righ
 }
 .photo-strip img {
   width: 100%;
-  height: 420px;
   object-fit: cover;
-  object-position: top center;
 }
+.photo-strip img:nth-child(1) { aspect-ratio: 900 / 1029; }
+.photo-strip img:nth-child(2) { aspect-ratio: 800 / 1226; }
 
 /* ---------- Train With Me ---------- */
 .train { background: var(--panel); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -412,7 +412,6 @@ h2.center { text-align: center; max-width: 680px; margin-left: auto; margin-righ
 @media (max-width: 640px) {
   .coach-grid { grid-template-columns: 1fr; }
   .photo-strip { grid-template-columns: 1fr; margin-top: 48px; }
-  .photo-strip img { height: 320px; }
 }
 
 @media (max-width: 720px) {

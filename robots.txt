@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maxstrengthcoaching.github.io/Max-/sitemap.xml
