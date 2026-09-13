@@ -23,7 +23,7 @@ form.addEventListener('submit', (event) => {
   const name = form.name.value.trim();
   const email = form.email.value.trim();
   const phone = form.phone.value.trim();
-  const experience = form.experience.value;
+  const program = form.program.value;
   const goals = form.goals.value.trim();
 
   const subject = `Coaching Sign Up: ${name}`;
@@ -31,8 +31,8 @@ form.addEventListener('submit', (event) => {
     `Name: ${name}\n` +
     `Email: ${email}\n` +
     `Phone: ${phone || 'N/A'}\n` +
-    `Experience Level: ${experience}\n\n` +
-    `Goals / Fight Date:\n${goals}`;
+    `Program: ${program}\n\n` +
+    `Goals:\n${goals}`;
 
   const mailtoUrl = `mailto:Coachmaxstrength@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   window.location.href = mailtoUrl;
