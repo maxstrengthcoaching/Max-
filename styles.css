@@ -166,7 +166,7 @@ h2.center { text-align: center; max-width: 680px; margin-left: auto; margin-righ
 }
 .hero-inner {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1.3fr 0.7fr;
   gap: 56px;
   align-items: center;
 }
@@ -185,12 +185,13 @@ h2.center { text-align: center; max-width: 680px; margin-left: auto; margin-righ
 }
 .hero-social:hover { text-decoration: underline; }
 .hero-media img {
-  width: 100%;
+  width: 90%;
+  margin-left: auto;
   aspect-ratio: 900 / 1201;
   object-fit: cover;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(52, 211, 153, 0.4);
   border-radius: var(--radius);
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6), 0 0 60px rgba(16, 185, 129, 0.08);
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.65), 0 0 90px rgba(16, 185, 129, 0.22);
 }
 
 /* ---------- Marquee ---------- */
