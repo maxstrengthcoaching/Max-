@@ -538,7 +538,7 @@ h2.center { text-align: center; max-width: 680px; margin-left: auto; margin-righ
   .hero-inner,
   .about-grid,
   .book-inner { grid-template-columns: 1fr; }
-  .hero-media { order: -1; max-width: 320px; margin: 0 auto; }
+  .hero-media { order: -1; max-width: 210px; margin: 0 auto; }
   .hero-media img { width: 100%; }
   .train-grid,
   .coach-grid { grid-template-columns: repeat(2, 1fr); }
