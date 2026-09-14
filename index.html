@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Max Strength Coaching</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%23070A09'/%3E%3Ctext x='50' y='72' font-size='62' font-family='Arial,sans-serif' font-weight='900' fill='%2310B981' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
 <meta name="description" content="Train with Max Strength Coaching — in person at Herberton Leisure Centre, Dublin 8, or online anywhere via TrueCoach. Book a call to get started.">
 <link rel="canonical" href="https://maxstrengthcoaching.github.io/Max-/">
 
@@ -46,6 +47,7 @@
 </script>
 </head>
 <body>
+<div class="grain" aria-hidden="true"></div>
 
 <header class="site-header">
   <div class="container header-inner">
@@ -53,8 +55,8 @@
     <nav class="main-nav" id="main-nav">
       <a href="#about">About</a>
       <a href="#coach">What I Coach</a>
+      <a href="#quiz">Quiz</a>
       <a href="#train">Train With Me</a>
-      <a href="https://www.instagram.com/max_strength_coaching/" target="_blank" rel="noopener">Instagram</a>
       <a href="#book" class="nav-cta">Book A Call</a>
     </nav>
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -92,10 +94,10 @@
 
   <section id="about" class="section about">
     <div class="container about-grid">
-      <div class="about-media">
+      <div class="about-media reveal">
         <img src="assets/images/about-max.jpg" alt="Max in a boxing stance" loading="lazy">
       </div>
-      <div class="about-copy">
+      <div class="about-copy reveal">
         <p class="eyebrow">About Me</p>
         <h2>No Templates.<br>Just Results.</h2>
         <p>I'm Max &mdash; a coach who trains at the same level I coach at. Every client gets a plan built around their body, their schedule, and their goal. Not a PDF you download and forget. Not a generic template. A real program, coached by me, personally, every week.</p>
@@ -110,22 +112,22 @@
       <h2 class="center">One Coach. Every Goal. No Excuses.</h2>
       <p class="section-sub center">Most coaches pick a lane. I built the system for all four &mdash; and I coach every single one of them personally.</p>
       <div class="coach-grid">
-        <div class="coach-tile">
+        <div class="coach-tile reveal">
           <span class="coach-num">01</span>
           <h3>Fat Loss</h3>
           <p>Sustainable fat loss without crash diets &mdash; strip the fat, keep your strength and your sanity.</p>
         </div>
-        <div class="coach-tile">
+        <div class="coach-tile reveal">
           <span class="coach-num">02</span>
           <h3>Body Composition <br>For Women</h3>
           <p>Training and nutrition built specifically around female physique goals &mdash; leaner, stronger, more defined.</p>
         </div>
-        <div class="coach-tile">
+        <div class="coach-tile reveal">
           <span class="coach-num">03</span>
           <h3>Strength &amp; Conditioning <br>For Fighters</h3>
           <p>Power and conditioning that holds up in the late rounds &mdash; periodized around your fight camp.</p>
         </div>
-        <div class="coach-tile">
+        <div class="coach-tile reveal">
           <span class="coach-num">04</span>
           <h3>Bodybuilding &amp; Mass Gain</h3>
           <p>Serious size, built with structure &mdash; a real bodybuilding approach for men ready to grow.</p>
@@ -133,8 +135,33 @@
       </div>
     </div>
     <div class="photo-strip">
-      <img src="assets/images/gallery-team.jpg" alt="Max coaching in the gym" loading="lazy">
-      <img src="assets/images/profile-max.jpg" alt="Max training" loading="lazy">
+      <img class="reveal" src="assets/images/gallery-team.jpg" alt="Max coaching in the gym" loading="lazy">
+      <img class="reveal" src="assets/images/profile-max.jpg" alt="Max training" loading="lazy">
+    </div>
+  </section>
+
+  <section id="quiz" class="section quiz">
+    <div class="container">
+      <p class="eyebrow center">Find Your Program</p>
+      <h2 class="center">Not Sure Where To Start?</h2>
+      <p class="section-sub center">Answer one question and I'll point you to the right program.</p>
+      <div class="quiz-box reveal">
+        <div class="quiz-step">
+          <p class="quiz-question">What's your main goal right now?</p>
+          <div class="quiz-options">
+            <button type="button" class="quiz-option" data-program="fatloss">Lose fat &amp; get leaner</button>
+            <button type="button" class="quiz-option" data-program="women">Sculpt &amp; tone my shape</button>
+            <button type="button" class="quiz-option" data-program="fighter">Get stronger for fighting</button>
+            <button type="button" class="quiz-option" data-program="bodybuilding">Build serious size</button>
+          </div>
+        </div>
+        <div class="quiz-result" id="quiz-result" hidden>
+          <p class="eyebrow">Your Program</p>
+          <h3 id="quiz-result-title"></h3>
+          <p id="quiz-result-desc"></p>
+          <a href="#book" class="btn btn-primary" id="quiz-cta">Book A Call For This</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -143,14 +170,14 @@
       <p class="eyebrow center">Train With Me</p>
       <h2 class="center">Two Ways In. One Standard.</h2>
       <div class="train-grid">
-        <div class="train-card">
+        <div class="train-card reveal">
           <p class="train-tag">In-Person</p>
           <h3>Herberton Leisure Centre</h3>
           <p class="train-desc">Dublin 8. Train with me face-to-face &mdash; hands-on coaching, real-time correction, no guesswork.</p>
           <a href="https://www.google.com/maps/search/?api=1&query=Herberton+Leisure+Centre+Dublin+8" target="_blank" rel="noopener" class="train-link">Get Directions &rarr;</a>
           <a href="#book" class="btn btn-primary btn-full">Book A Call</a>
         </div>
-        <div class="train-card">
+        <div class="train-card reveal">
           <p class="train-tag">Online</p>
           <h3>Coached On TrueCoach</h3>
           <p class="train-desc">Anywhere in the world. Custom programming, video feedback, and weekly check-ins through the TrueCoach app.</p>
@@ -163,13 +190,13 @@
 
   <section id="book" class="section book">
     <div class="container book-inner">
-      <div class="book-copy">
+      <div class="book-copy reveal">
         <p class="eyebrow">Book A Call</p>
         <h2>Let's Talk About Your Goal.</h2>
         <p>One call. No pressure, no cookie-cutter pitch &mdash; just a real conversation about where you're at and how I can get you to where you want to be. Fill this in and I'll be in touch to lock in a time.</p>
         <a href="tel:+353852109655" class="phone-link">&#9742; Or just call/text me &mdash; 085 210 9655</a>
       </div>
-      <form id="book-form" class="book-form">
+      <form id="book-form" class="book-form reveal">
         <div class="form-row">
           <label for="name">Full Name</label>
           <input type="text" id="name" name="name" required>
@@ -236,6 +263,8 @@
     <p class="copyright">&copy; <span id="year"></span> Max Strength Coaching. All rights reserved.</p>
   </div>
 </footer>
+
+<a href="#book" id="sticky-cta" class="sticky-cta">Book A Call</a>
 
 <script src="script.js"></script>
 </body>
