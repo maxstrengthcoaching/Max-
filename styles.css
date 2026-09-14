@@ -266,12 +266,16 @@ h2.center { text-align: center; max-width: 680px; margin-left: auto; margin-righ
 
 .photo-strip {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  gap: 32px;
   margin-top: 80px;
 }
 .photo-strip img {
   width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
   object-fit: cover;
+  border-radius: var(--radius);
 }
 .photo-strip img:nth-child(1) { aspect-ratio: 900 / 1029; }
 .photo-strip img:nth-child(2) { aspect-ratio: 800 / 1226; }
@@ -530,7 +534,7 @@ h2.center { text-align: center; max-width: 680px; margin-left: auto; margin-righ
 
 @media (max-width: 640px) {
   .coach-grid { grid-template-columns: 1fr; }
-  .photo-strip { grid-template-columns: 1fr; margin-top: 48px; }
+  .photo-strip { margin-top: 48px; gap: 24px; }
   .quiz-options { grid-template-columns: 1fr; }
   .quiz-box { padding: 32px 24px; }
   .sticky-cta { right: 16px; bottom: 16px; padding: 12px 20px; font-size: 0.8rem; }
